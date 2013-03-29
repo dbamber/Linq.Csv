@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2012 for Web
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Linq.Csv", "Linq.Csv\Linq.Csv.csproj", "{16B3937D-810A-42E5-B553-D190DE405E75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Linq.Csv.Test", "Linq.Csv.Test\Linq.Csv.Test.csproj", "{57D2D0C6-244E-4F07-BA04-03F9227E62EB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{16B3937D-810A-42E5-B553-D190DE405E75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16B3937D-810A-42E5-B553-D190DE405E75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16B3937D-810A-42E5-B553-D190DE405E75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16B3937D-810A-42E5-B553-D190DE405E75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57D2D0C6-244E-4F07-BA04-03F9227E62EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57D2D0C6-244E-4F07-BA04-03F9227E62EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57D2D0C6-244E-4F07-BA04-03F9227E62EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57D2D0C6-244E-4F07-BA04-03F9227E62EB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
