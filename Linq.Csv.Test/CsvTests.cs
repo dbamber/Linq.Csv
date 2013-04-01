@@ -16,7 +16,7 @@ namespace Linq.Csv.Test
         {
             List<string> data = new List<string>();
 
-            var output = data.Csv(new { A = "MethodName", B = "Returns" }, x => x, x => x);
+            var output = data.Csv(new string[] { "MethodName", "Returns" }, x => x, x => x);
 
             Assert.AreEqual("MethodName, Returns\r\n", output);
         }
