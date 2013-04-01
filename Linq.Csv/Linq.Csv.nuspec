@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Linq.Csv</id>
+    <version>1.2</version>
+    <title>Linq.Csv</title>
+    <authors>David Bamber</authors>
+    <owners>David Bamber</owners>
+    <projectUrl>https://github.com/dbamber/Linq.Csv/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Linq extension method to generate CSV files</description>
+    <releaseNotes>Initial Release</releaseNotes>
+    <copyright>Copyright 2013</copyright>
+    <tags>CSV Linq</tags>
+  </metadata>
+</package>

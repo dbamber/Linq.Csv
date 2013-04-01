@@ -3,6 +3,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
 using System.Reflection;
 using System.Linq;
+using System.IO;
 namespace Linq.Csv.Test
 {
     [TestClass]
@@ -83,6 +84,32 @@ namespace Linq.Csv.Test
             var expected = "one, two\r\none, two\r\n";
             var data = input.Csv(p => "one", p => "two");
             Assert.AreEqual(expected, data);
+        }
+
+        [TestMethod]
+        public void TestStreamMethod()
+        {
+            var input = Enumerable.Range(1, 2);
+            var expected = "one, two\r\none, two\r\n";
+
+            var memoryStream = new MemoryStream();
+            memoryStream.WriteCsv(input, p => "one", p => "two");
+
+            var actualData = System.Text.Encoding.ASCII.GetString(memoryStream.ToArray());
+            Assert.AreEqual(expected, actualData);
+        }
+
+        [TestMethod]
+        public void TestStreamMethodWithHeader()
+        {
+            var input = Enumerable.Range(1, 2);
+            var expected = "first, second\r\none, two\r\none, two\r\n";
+
+            var memoryStream = new MemoryStream();
+            memoryStream.WriteCsv(input, new string[] { "first", "second" }, p => "one", p => "two");
+
+            var actualData = System.Text.Encoding.ASCII.GetString(memoryStream.ToArray());
+            Assert.AreEqual(expected, actualData);
         }
     }
 }

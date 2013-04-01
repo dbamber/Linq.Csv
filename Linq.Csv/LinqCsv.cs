@@ -24,7 +24,10 @@ namespace Linq.Csv
         {
             return source.Csv(null, columns);
         }
-
+        public static void WriteCsv<T>(this Stream stream, IEnumerable<T> data,  params Func<T, object>[] columns)
+        {
+            stream.WriteCsv(data, null, columns);
+        }
         public static void WriteCsv<T>(this Stream stream, IEnumerable<T> data, string[] header, params Func<T, object>[] columns)
         {
             using (StreamWriter writer = new StreamWriter(stream))
